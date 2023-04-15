@@ -14,18 +14,18 @@
         <input type="button" id="btn1" value="Search for address">
 
         <p class ="address" id="textOutput"></p>
+
+        <script>
+            const txt1 = document.getElementById("textInput");
+            const btn1 = document.getElementById("btn1");
+            const out1 = document.getElementById("textOutput");
+    
+            function func1()
+            {
+                out1.innerHTML = txt1.value;
+            }
+    
+            btn1.addEventListener('click',func1);
+        </script>
     </body>
-
-    <script>
-        const txt1 = documnet.getElementById("textInput");
-        const btn1 = documnet.getElementById("btn1");
-        const out1 = document.getElementById("output1");
-
-        function func1()
-        {
-            out1.innerHTML = txt.value;
-        }
-
-        btn1.addEventListener('click',fun1);
-    </script>
 </html>
