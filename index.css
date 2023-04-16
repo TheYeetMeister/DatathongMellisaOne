@@ -11,6 +11,28 @@ body {
     margin: 0px;
 }
 
+.searchBar {
+    width: 30%;
+    max-width: 300 px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.textInput {
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #e79600;
+    border-radius: 5px 0 0 5px;
+    background: #fdf2e2;
+    transition: background 0.25s, box-shadow 0.25s;
+}
+
+.textInput:focus {
+    background: white;
+    box-shadow: 0 0 2px #eed5aa;
+}
+
 .Background {
     display: flex;
     align-items: center;
