@@ -2,33 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>OC Address</title>
-        <link rel="stylesheet" href="index.css">
+        <title>OC picked Address</title>
+        <link rel="stylesheet" href="../index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
-        <div class="Background">
-            <h3 class="text">Embark within OC!</h5>
-            
+        <div class="header">
             <div class="searchBar">
+
                 <input type="text" class="textInput" id="text1" placeholder="search OC address">
                 <button type="button" class="buttonInput" id="btn1"> 
                     <i class="material-icons">search</i>
                 </button>
-            </div>
 
+            </div>
+            <a class = "homeBtn" href='../index.html'>Home</a>
+        
+        </div>
+        <p class ="output1" id="textOutput"></p>
             <script>
                 const txt1 = document.getElementById("text1");
                 const btn1 = document.getElementById("btn1");
-        
+                const out1 = document.getElementById('textOutput');
+                
+                out1.innerHTML = JSON.parse(sessionStorage.getItem('loc'));
+
                 function func1()
                 {
-                    window.location.replace("pages/display.html");
-                    sessionStorage.setItem('loc', JSON.stringify(txt1.value));
-                    window.location.href = "pages/display.html";
+                    out1.innerHTML = txt1.value;
                 }
-        
+
                 btn1.addEventListener('click',func1);
             </script>
         </div>
