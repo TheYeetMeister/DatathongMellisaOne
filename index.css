@@ -37,6 +37,17 @@ body {
     color: #e0ba77;;
 }
 
+.buttonInput {
+    width: 40px;
+    background: #e79600;
+    color: white;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .Background {
     display: flex;
     align-items: center;
