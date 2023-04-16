@@ -11,9 +11,11 @@
 .header {
     display:flex;
     justify-content: space-between;
+    padding: 30px 100px;
 }
 
 .homeBtn {
+    padding: 10px;
     text-decoration: none;
     color: black;
 }
