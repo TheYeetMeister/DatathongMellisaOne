@@ -18,9 +18,18 @@
 
             <p class ="output1" id="textOutput"></p>
             <script>
+                const txt1 = document.getElementById("text1");
+                const btn1 = document.getElementById("btn1");
                 const out1 = document.getElementById('textOutput');
                 
                 out1.innerHTML = JSON.parse(sessionStorage.getItem('loc'));
+
+                function func1()
+                {
+                    out1.innerHTML = txt1.value;
+                }
+
+                btn1.addEventListener('click',func1);
             </script>
         </div>
     </body>
