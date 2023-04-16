@@ -1,14 +1,20 @@
-.title {
+.text {
     display: flex;
     font-size: 5em;
     justify-content: center;
     padding: 40px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
 }
 
 .Background {
     background-image: url('pics/Green Blue Anime Scene Desktop Wallpaper.png');
     background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-size:1980px 1000px;
     color: white;
+    margin: 0px;
 }
 
