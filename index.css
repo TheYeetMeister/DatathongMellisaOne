@@ -33,6 +33,10 @@ body {
     box-shadow: 0 0 2px #eed5aa;
 }
 
+.textInput::placeholder {
+    color: #e0ba77;;
+}
+
 .Background {
     display: flex;
     align-items: center;
