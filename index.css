@@ -13,7 +13,9 @@ body {
 .Background {
     background-image: url('pics/Green Blue Anime Scene Desktop Wallpaper.png');
     background-repeat: no-repeat;
-    background-size:1980px 1000px;
+    background-size:100% 100%;
+    height:1000px;
+    width:100%;
     color: white;
     margin: 0px;
 }
