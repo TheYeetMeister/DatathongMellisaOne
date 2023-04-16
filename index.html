@@ -17,17 +17,16 @@
                     <i class="material-icons">search</i>
                 </button>
             </div>
-            <p class ="address" id="textOutput">|</p>
 
             <script>
                 const txt1 = document.getElementById("text1");
                 const btn1 = document.getElementById("btn1");
-                const out1 = document.getElementById("textOutput");
         
                 function func1()
                 {
                     window.location.replace("pages/display.html");
-                    out1.innerHTML = txt1.value;
+                    sessionStorage.setItem('loc', JSON.stringify(txt1.value));
+                    window.location.href = "pages/display.html";
                 }
         
                 btn1.addEventListener('click',func1);
